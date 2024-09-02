@@ -1,0 +1,72 @@
+.top-rating {
+  max-width: 360px;
+  padding: 26px 26px 14px;
+  background-color: $color-solitude;
+  border-radius: 8px;
+
+  @include vp-1919 {
+    max-width: 292px;
+    padding: 18px 20px 16px;
+  }
+
+  @include vp-1023 {
+    max-width: unset;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+
+    @include vp-1919 {
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 0 20px;
+    padding: 0;
+
+    @include vp-1919 {
+      margin: 0 0 12px;
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    transition: opacity 0.3s ease-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__position-number {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight:  600;
+  }
+
+  &__update-date {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-light-slate-grey;
+  }
+}

@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сайт с рейтингами и отзывами автосалонов России">
+  <title>Автоотзыв</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo" href="/">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/content/logo-auto-review.svg 1x" width="89" height="36">
+              <source media="(max-width: 1023px)" srcset="img/content/logo-auto-review.svg 1x" width="94" height="38">
+              <img src="img/content/logo-auto-review.svg" width="119" height="48" alt="Логотип Автоотзыв.">
+            </picture>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link--current" href="/">Главная</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="/">Отзывы</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="/">Обратная связь</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="/">Правила</a>
+              </li>
+            </ul>
+            <button class="header__burger-button button button--toggle" type="button"
+              aria-label="Кнопка навигации"></button>
+          </nav>
+          <div class="header__input-wrapper">
+            <input placeholder="Поиск по автосалонам">
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title">Отзывы об автосалонах по&nbsp;всей России</h1>
+            <p class="hero__desc">Мы собираем только реальные отзывы покупателей и посетителей автосалонов, чтобы
+              поделиться ими с Вами! Надеемся, и Вы примите активное участие в обсуждениях, и не станете жертвой
+              автообмана!
+            </p>
+            <a class="hero__button button" href="/">Найти отзывы об автосалоне</a>
+          </div>
+        </div>
+        <div class="hero__img">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/content/hero-mobile.webp 1x, img/content/hero-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/content/hero-tablet.webp 1x, img/content/hero-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1919px)"
+              srcset="img/content/hero-desktop1024.webp 1x, img/content/hero-desktop1024@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/hero-desktop1920.webp 1x, img/content/hero-desktop1920@2x.webp 2x">
+            <source media="(max-width: 767px)"
+              srcset="img/content/hero-mobile.png 1x, img/content/hero-mobile@2x.png 2x" width="360" height="352">
+            <source media="(max-width: 1023px)"
+              srcset="img/content/hero-tablet.png 1x, img/content/hero-tablet@2x.png 2x" width="768" height="390">
+            <source media="(max-width: 1919px)"
+              srcset="img/content/hero-desktop1024.png 1x, img/content/hero-desktop1024@2x.png 2x" width="1024"
+              height="408">
+            <img src="img/content/hero-desktop1920.png" srcset="img/content/hero-desktop1920@2x.png 2x" width="1920"
+              height="480" alt="Смартфон с приложением Автоотзыв.">
+          </picture>
+        </div>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог автосалонов</h2>
+        <div class="container">
+          <div class="catalog__filter">
+            <div class="catalog__filters">
+              <p class="catalog__filters-city">
+                Выберите
+                <span class="catalog__city-name">город</span>
+              </p>
+              <p class="catalog__filters-sorting">
+                Сортировать
+                <span class="catalog__sorting-type">по популярности</span>
+              </p>
+            </div>
+            <ul class="catalog__filter-list">
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--good">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--good">Высокий рейтинг
+                    доверия</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-crystal-motors.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-crystal-motors.svg" width="80" height="80"
+                          alt="Логотип Crystal Motors.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Crystal Motors</h3>
+                    <span class="company-card-header__rating-number">4,9</span>
+                    <span class="company-card-header__reviews">246 отзывов</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Университетская Набережная, 68</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 220-78-13</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">crystal-motors.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://crystal-motors.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--bad">Много негативных
+                    отзывов</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-alcon-auto.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-alcon-auto.svg" width="80" height="80" alt="Логотип Алькон Авто.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Алькон Авто</h3>
+                    <span class="company-card-header__rating-number">1,8</span>
+                    <span class="company-card-header__reviews">4 отзыва</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Москва</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">33км МКАД 6с6</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (495) 266-24-45</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">alcon-auto.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://alcon-auto.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--not-bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--not-bad">Мало
+                    отзывов</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-proxy-cars.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-proxy-cars.svg" width="80" height="80" alt="Логотип Proxy-cars.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Proxy-cars</h3>
+                    <span class="company-card-header__rating-number">4,3</span>
+                    <span class="company-card-header__reviews">5 отзывов</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Петрозаводск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Лыжная, 3</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (814) 255-90-38</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">proxy-cars.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://proxy-cars.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--bad">Новый автосалон
+                    (менее
+                    1 года)</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-aquamarine.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-aquamarine.svg" width="80" height="80" alt="Логотип Аквамарин.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Аквамарин</h3>
+                    <span class="company-card-header__rating-number">1,5</span>
+                    <span class="company-card-header__reviews">19 отзывов</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Братьев Кашириных, 147А</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 200-74-68</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">ac-aquamarine.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://ac-aquamarine.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--good">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--good">Высокий рейтинг
+                    доверия</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-autohouse.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-autohouse.svg" width="80" height="80" alt="Логотип Autohouse.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">AutoHouse</h3>
+                    <span class="company-card-header__rating-number">4,9</span>
+                    <span class="company-card-header__reviews">206 отзывов</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Кузнецова, 1А</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 242-00-89</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">chel.autohouse24.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://chel.autohouse24.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--not-bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--not-bad">Мало
+                    отзывов</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-first-independ.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-first-independ.svg" width="80" height="80" alt="Логотип Proxy-cars.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Первый Независимый...</h3>
+                    <span class="company-card-header__rating-number">3,5</span>
+                    <span class="company-card-header__reviews">4 отзыва</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Братьев Кашириных, 135</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 220-82-79</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">pncentr.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://pncentr.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--not-bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--not-bad">Мало
+                    отзывов</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-first-independ.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-first-independ.svg" width="80" height="80" alt="Логотип Proxy-cars.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Первый Независимый...</h3>
+                    <span class="company-card-header__rating-number">3,5</span>
+                    <span class="company-card-header__reviews">4 отзыва</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Братьев Кашириных, 135</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 220-82-79</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">pncentr.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://pncentr.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--bad">Новый автосалон
+                    (менее
+                    1 года)</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-aquamarine.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-aquamarine.svg" width="80" height="80" alt="Логотип Аквамарин.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Аквамарин</h3>
+                    <span class="company-card-header__rating-number">1,5</span>
+                    <span class="company-card-header__reviews">19 отзывов</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Братьев Кашириных, 147А</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 200-74-68</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">ac-aquamarine.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://ac-aquamarine.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--good">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--good">Высокий рейтинг
+                    доверия</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-autocred.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-autocred.svg" width="80" height="80" alt="Логотип Авто с пробегом.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Авто с пробегом</h3>
+                    <span class="company-card-header__rating-number">4,9</span>
+                    <span class="company-card-header__reviews">132 отзывa</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Кузнецова, 1А</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 200-25-16</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">chel.autocred1.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://chel.autocred1.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--good">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--good">Высокий рейтинг
+                    доверия</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-crystal-motors.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-crystal-motors.svg" width="80" height="80"
+                          alt="Логотип Crystal Motors.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Crystal Motors</h3>
+                    <span class="company-card-header__rating-number">4,9</span>
+                    <span class="company-card-header__reviews">246 отзывов</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Университетская Набережная, 68</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 220-78-13</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">crystal-motors.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://crystal-motors.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--bad">Много негативных
+                    отзывов</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-alcon-auto.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-alcon-auto.svg" width="80" height="80" alt="Логотип Алькон Авто.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Алькон Авто</h3>
+                    <span class="company-card-header__rating-number">1,8</span>
+                    <span class="company-card-header__reviews">4 отзыва</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Москва</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">33км МКАД 6с6</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (495) 266-24-45</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">alcon-auto.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://alcon-auto.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--not-bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--not-bad">Мало
+                    отзывов</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-proxy-cars.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-proxy-cars.svg" width="80" height="80" alt="Логотип Proxy-cars.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Proxy-cars</h3>
+                    <span class="company-card-header__rating-number">4,3</span>
+                    <span class="company-card-header__reviews">5 отзывов</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Петрозаводск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Лыжная, 3</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (814) 255-90-38</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">proxy-cars.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://proxy-cars.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--bad">Новый автосалон
+                    (менее
+                    1 года)</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-aquamarine.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-aquamarine.svg" width="80" height="80" alt="Логотип Аквамарин.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Аквамарин</h3>
+                    <span class="company-card-header__rating-number">1,5</span>
+                    <span class="company-card-header__reviews">19 отзывов</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Братьев Кашириных, 147А</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 200-74-68</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">ac-aquamarine.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://ac-aquamarine.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--good">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--good">Высокий рейтинг
+                    доверия</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-autohouse.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-autohouse.svg" width="80" height="80" alt="Логотип Autohouse.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">AutoHouse</h3>
+                    <span class="company-card-header__rating-number">4,9</span>
+                    <span class="company-card-header__reviews">206 отзывов</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Кузнецова, 1А</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 242-00-89</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">chel.autohouse24.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://chel.autohouse24.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--not-bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--not-bad">Мало
+                    отзывов</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-first-independ.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-first-independ.svg" width="80" height="80" alt="Логотип Proxy-cars.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Первый Независимый...</h3>
+                    <span class="company-card-header__rating-number">3,5</span>
+                    <span class="company-card-header__reviews">4 отзыва</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Братьев Кашириных, 135</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 220-82-79</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">pncentr.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://pncentr.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--not-bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--not-bad">Мало
+                    отзывов</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-first-independ.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-first-independ.svg" width="80" height="80" alt="Логотип Proxy-cars.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Первый Независимый...</h3>
+                    <span class="company-card-header__rating-number">3,5</span>
+                    <span class="company-card-header__reviews">4 отзыва</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Братьев Кашириных, 135</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 220-82-79</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">pncentr.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://pncentr.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--bad">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--bad">Новый автосалон
+                    (менее
+                    1 года)</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-aquamarine.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-aquamarine.svg" width="80" height="80" alt="Логотип Аквамарин.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Аквамарин</h3>
+                    <span class="company-card-header__rating-number">1,5</span>
+                    <span class="company-card-header__reviews">19 отзывов</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Братьев Кашириных, 147А</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 200-74-68</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">ac-aquamarine.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://ac-aquamarine.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__rating-status company-card__rating-status--good">
+                  <span class="company-card__rating-status-text company-card__rating-status-text--good">Высокий рейтинг
+                    доверия</span>
+                </div>
+                <div class="company-card__content">
+                  <div class="company-card__header company-card-header">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-autocred.svg 1x" width="60"
+                          height="60">
+                        <img src="img/content/logo-autocred.svg" width="80" height="80" alt="Логотип Авто с пробегом.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Авто с пробегом</h3>
+                    <span class="company-card-header__rating-number">4,9</span>
+                    <span class="company-card-header__reviews">132 отзывa</span>
+                  </div>
+                  <ul class="company-card__info-list">
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Город:</span>
+                      <span class="company-card__info-item-desc">Челябинск</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Адрес:</span>
+                      <span class="company-card__info-item-desc">Кузнецова, 1А</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Телефон:</span>
+                      <span class="company-card__info-item-desc">+7 (351) 200-25-16</span>
+                    </li>
+                    <li class="company-card__info-item">
+                      <span class="company-card__info-item-name">Сайт:</span>
+                      <span class="company-card__info-item-desc">chel.autocred1.ru</span>
+                    </li>
+                  </ul>
+                  <div class="company-card__buttons-wrapper">
+                    <a class="button button--more" href="https://chel.autocred1.ru" target="_blank"
+                      rel="noopener noreferrer">Подробнее</a>
+                    <button class="button button--copy-link" type="button" aria-label="cкопировать ссылку на сайт">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.084 1.90342C21.5474 -0.634474 17.3917 -0.634474 14.8551 1.90342L9.87184 6.88922C11.5809 6.40324 13.4339 6.52923 15.053 7.2852L17.6435 4.69331C18.651 3.68535 20.2881 3.68535 21.2955 4.69331C22.3029 5.70127 22.3029 7.3392 21.2955 8.34716L18.0393 11.605L15.8985 13.7469C14.891 14.7549 13.254 14.7549 12.2465 13.7469L9.45801 16.5368C10.1056 17.1849 10.8612 17.6708 11.6528 17.9768C13.7937 18.8227 16.2763 18.4987 18.1472 17.0227C18.3271 16.8788 18.525 16.7168 18.6869 16.5368L22.0511 13.1709L24.0839 11.137C26.6386 8.59915 26.6386 4.45932 24.084 1.90342Z"
+                          fill="CurrentColor" />
+                        <path
+                          d="M10.8254 18.8227L8.34281 21.3066C7.33537 22.3146 5.69828 22.3146 4.69084 21.3066C3.6834 20.2987 3.6834 18.6608 4.69084 17.6528L10.0878 12.253C11.0953 11.2451 12.7324 11.2451 13.7399 12.253L16.5283 9.46316C15.8807 8.81518 15.1251 8.3292 14.3335 8.02321C12.0848 7.12325 9.44026 7.53723 7.55131 9.22917C7.46136 9.30116 7.37141 9.39116 7.29945 9.46316L1.90244 14.8629C-0.634148 17.4008 -0.634148 21.5586 1.90244 24.0966C4.43904 26.6345 8.59473 26.6345 11.1313 24.0966L16.0067 19.1647C13.5239 19.7406 12.9483 19.6687 10.8254 18.8227Z"
+                          fill="CurrentColor" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="catalog__filter-button button" type="button">Показать ещё</button>
+          </div>
+          <div class="catalog__blocks">
+            <article class="catalog__top-rating top-rating">
+              <h2 class="top-rating__title">Рейтинг автосалонов</h2>
+              <ol class="top-rating__list">
+                <li class="top-rating__item">
+                  <span class="top-rating__position-number">1 место</span>
+                  <a class="top-rating__link company-card-header" href="https://crystal-motors.ru" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-crystal-motors.svg 1x" width="50"
+                          height="50">
+                        <img src="img/content/logo-crystal-motors.svg" width="60" height="60"
+                          alt="Логотип Crystal Motors.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Crystal Motors</h3>
+                    <span class="company-card-header__rating-number">4,9</span>
+                    <span class="company-card-header__reviews">246 отзывов</span>
+                  </a>
+                </li>
+                <li class="top-rating__item">
+                  <span class="top-rating__position-number">2 место</span>
+                  <a class="top-rating__link company-card-header" href="https://chel.autohouse24.ru" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-autohouse.svg 1x" width="50"
+                          height="50">
+                        <img src="img/content/logo-autohouse.svg" width="60" height="60" alt="Логотип Autohouse.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">AutoHouse</h3>
+                    <span class="company-card-header__rating-number">4,9</span>
+                    <span class="company-card-header__reviews">206 отзывов</span>
+                  </a>
+                </li>
+                <li class="top-rating__item">
+                  <span class="top-rating__position-number">3 место</span>
+                  <a class="top-rating__link company-card-header" href="https://chel.autocred1.ru" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="company-card-header__logo">
+                      <picture>
+                        <source media="(max-width: 1919px)" srcset="img/content/logo-autocred.svg 1x" width="50"
+                          height="50">
+                        <img src="img/content/logo-autocred.svg" width="60" height="60" alt="Логотип Авто с пробегом.">
+                      </picture>
+                    </div>
+                    <h3 class="company-card-header__title">Авто с пробегом</h3>
+                    <span class="company-card-header__rating-number">4,9</span>
+                    <span class="company-card-header__reviews">132 отзывa</span>
+                  </a>
+                </li>
+              </ol>
+              <span class="top-rating__update-date">Последнее обновление информации: 22.01.2024&nbsp;г.</span>
+            </article>
+            <aside class="advert">
+              <a class="advert__link" href="https://crystal-motors.ru/autocredit/small-percentage" target="_blank"
+                rel="noopener noreferrer">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/content/advert-mobile.webp 1x, img/content/advert-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/content/advert-tablet.webp 1x, img/content/advert-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1919px)"
+                    srcset="img/content/advert-desktop1024.webp 1x, img/content/advert-desktop1024@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/advert-desktop1920.webp 1x, img/content/advert-desktop1920@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/content/advert-mobile.png 1x, img/content/advert-mobile@2x.png 2x" width="328"
+                    height="328">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/content/advert-tablet.png 1x, img/content/advert-tablet@2x.png 2x" width="394"
+                    height="394">
+                  <source media="(max-width: 1919px)"
+                    srcset="img/content/advert-desktop1024.png 1x, img/content/advert-desktop1024@2x.png 2x" width="292"
+                    height="292">
+                  <img src="img/content/advert-desktop1920.png" srcset="img/content/advert-desktop1920@2x.png 2x"
+                    width="360" height="360" alt="Кредитное предложение от Crystal Motors.">
+                </picture>
+              </a>
+            </aside>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a class="footer__logo" href="/">
+            <img src="img/content/logo-auto-review.svg" width="99" height="40" alt="Логотип Автоотзыв.">
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="/">Отзывы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="/">Обратная связь</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="/">Правила</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="/">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="footer__button-add button button--add" type="button">Добавить автосалон</button>
+          <button class="footer__button-up button button--up" type="button" aria-label="кнопка наверх"></button>
+        </div>
+        <span class="footer__copyrights">© 2024 Авто отзыв. Все права защищены.</span>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

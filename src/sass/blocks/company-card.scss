@@ -1,0 +1,201 @@
+.company-card {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color-solitude;
+  border-radius: 8px;
+  list-style: none;
+
+  @include vp-1919 {
+    max-width: unset;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
+  &:nth-child(-n+9) {
+    @include vp-767 {
+      display: flex;
+    }
+  }
+
+  &__rating-status {
+    padding: 6px 20px;
+    border-radius: 8px 8px 0 0;
+
+    @include vp-767 {
+      padding: 6px 16px;
+    }
+
+    &--good {
+      background-color: $color-off-green;
+    }
+
+    &--bad {
+      background-color: $color-remy;
+    }
+
+    &--not-bad {
+      background-color: $color-lemon-chiffon;
+    }
+
+  }
+
+  &__rating-status-text {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+
+    &--good {
+      color: $color-chateau-green;
+    }
+
+    &--bad {
+      color: $color-cinnabar;
+    }
+
+    &--not-bad {
+      color: $color-sun-flower;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px 20px 14px;
+
+    @include vp-1919 {
+      padding: 20px 20px 18px;
+    }
+
+    @include vp-767 {
+      padding: 16px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 18px;
+
+    @include vp-1919 {
+      margin-bottom: 22px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 16px;
+    }
+  }
+
+  .company-card-header {
+    grid-template-columns: min-content auto 1fr;
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  .company-card-header__logo {
+    min-width: 80px;
+    grid-row: 1/-1;
+    grid-column: 1/2;
+    margin-right: 18px;
+
+    @include vp-1919 {
+      min-width: 60px;
+    }
+  }
+
+  .company-card-header__title {
+    grid-column: 2/-1;
+    align-self: center;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+
+    @include vp-1919 {
+      font-size: 18px;
+      line-height: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .company-card-header__rating-number {
+    grid-row: 2/-1;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-right: 12px;
+
+    @include vp-1919 {
+      margin-right: 8px;
+    }
+  }
+
+  .company-card-header__reviews {
+    grid-row: 2/-1;
+    grid-column: 3/-1;
+    align-self: flex-start;
+
+    @include vp-1919 {
+      font-size: 12px;
+      line-height: 16px;
+      align-self: center;
+    }
+  }
+
+  &__info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    padding: 0;
+
+    @include vp-1919 {
+      gap: 8px;
+    }
+  }
+
+  &__info-item {
+    display: grid;
+    grid-template-columns: 98px auto;
+    list-style: none;
+
+    @include vp-1919 {
+      grid-template-columns: 78px auto;
+    }
+  }
+
+  &__info-item-name,
+  &__info-item-desc {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $color-light-slate-grey;
+
+    @include vp-1919 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__info-item-name {
+    @include vp-1919 {
+      margin-right: 18px;
+    }
+  }
+
+  &__info-item-desc {
+    color: $color-default-black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    gap: 12px;
+  }
+}

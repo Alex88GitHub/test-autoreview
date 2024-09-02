@@ -1,0 +1,82 @@
+.company-card-header {
+  display: grid;
+  grid-template-columns: min-content auto auto;
+  grid-template-rows: repeat(2, min-content);
+
+  &__logo {
+    grid-row: 1/-1;
+    min-width: 60px;
+    margin-right: 12px;
+
+    @include vp-1919 {
+      min-width: 50px;
+    }
+
+    img {
+      @include vp-1919 {
+       border-radius: 8px;
+      }
+    }
+  }
+
+  &__title {
+    align-self: center;
+    font-weight: 600;
+    letter-spacing: -0.7px;
+
+    @include vp-1919 {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.1px;
+    }
+  }
+
+  &__rating-number {
+    position: relative;
+    justify-self: end;
+    align-self: center;
+    display: block;
+    padding-left: 27px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+
+    @include vp-1919 {
+      padding-left: 22px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 21px;
+      height: 20px;
+      background-image: url("../img/icons/icon-star.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include vp-1919 {
+        width: 16px;
+        height: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__reviews {
+    grid-column: 2/3;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    color: $color-light-slate-grey;
+
+    @include vp-1919 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
